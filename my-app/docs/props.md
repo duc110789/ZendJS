@@ -1,13 +1,13 @@
 
 ### Props
 
-1. Cách truyền vào thuộc tính cho component
+*1. Cách truyền vào thuộc tính cho component*
 
 ```
 <Course name="ReactJS">
 ```
 
-2. This gọi đến props gọi đến thuộc tính
+*2. This gọi đến props gọi đến thuộc tính*
 ```
 {this.props.name}
 ```
@@ -22,7 +22,7 @@ Lấy Hello ReactJS bằng cách
 {this.props.children}
 ```
 
-3. Để tạo function xử lý true/false của type
+*3. Để tạo function xử lý true/false của type*
 ```
 isCoursFree() {
     const isFree = this.props.free;
