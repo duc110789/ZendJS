@@ -31,7 +31,7 @@ class App extends React.Component {
 ```
 Gồm 3 steps:
 1. Trong render() trả về this.state.function()
-  - <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+  - It is {this.state.date.toLocaleTimeString()}.
 2. Add 1 class Constructor gán giá trị ban đầu cho this.state
   - this.state = {date: new Date()};
 3. Xử lý hàm 
