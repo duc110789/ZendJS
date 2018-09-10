@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Course from'./component/Course';
+import Lifecycle from'./component/Lifecycle';
 
 class App extends Component {
     render() {
@@ -21,12 +22,14 @@ class App extends Component {
                 free: true
             }
         ];
-        const elmCourses = items.map((item, index) =>
+        let elmCourses = items.map((item, index) =>
             <Course key={index} name={item.name} time={item.time} free={item.free} desc="ReactJS is very simple"/>
         );
+        elmCourses = null;
         return (
             <div className="row">
                 {elmCourses}
+                <Lifecycle />
             </div>
         );
     }
