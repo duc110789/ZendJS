@@ -5,7 +5,28 @@ import Form from './component/Form';
 import List from './component/List';
 
 class App extends Component {
+    constructor (props) {
+        super(props)
+        
+        this.state = {
+            items: [
+                {
+                    Name: 'ABC',
+                    Level: 0 // 0 Small, 1 Medium, 2 High
+                },
+                {
+                    Name: 'DEF',
+                    Level: 1 // 0 Small, 1 Medium, 2 High
+                },
+                {
+                    Name: 'GHJ',
+                    Level: 2 // 0 Small, 1 Medium, 2 High
+                }
+            ]
+        }
+    }
     render() {
+        let items = this.state.items;
         return (
             <div>
                 {/* TITLE : START */}
@@ -18,7 +39,7 @@ class App extends Component {
                 <Form />
                 {/* FORM : END */}
                 {/* LIST : START */}
-                <List />
+                <List items = {items}/>
                 {/* LIST : END */}
             </div>
         );
