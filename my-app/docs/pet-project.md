@@ -1,7 +1,7 @@
 ## Todo List
 
 ### Step1: spit các Component
-1. Component
+#### 1. Component
     - App.js
     - Control.js
     - Form.js
@@ -12,7 +12,7 @@
     - Title.js
 
 ### Step2: Hiển thị danh sách các Item
-#### Mock
+#### 2. Mock
     - Tasks.js
     
 > #### Implement
