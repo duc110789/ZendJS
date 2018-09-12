@@ -16,7 +16,7 @@
 
 ### Step2: Hiển thị danh sách các Item
 > #### Implement
-1. Map() các items trong Item.js
+#### 1. Map() các items trong Item.js
 ```
 const elmItem = items.map((item, index) => {
     return (
@@ -24,7 +24,7 @@ const elmItem = items.map((item, index) => {
     );
 });
 ```
-2. Tạo file json tên tasks.js
+#### 2. Tạo file json tên tasks.js
 ```
 let items = [
     {
@@ -34,7 +34,7 @@ let items = [
 ];
 export default items;
 ```
-3. Import file json vào App.js
+#### 3. Import file json vào App.js
 ```
 constructor(props) {
     super(props);
