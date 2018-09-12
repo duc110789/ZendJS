@@ -2,7 +2,7 @@
 
 ### Step1: spit các Component
 
-### h3 Component
+###h3 Component
     - App.js
     - Control.js
     - Form.js
