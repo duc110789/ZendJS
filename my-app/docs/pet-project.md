@@ -2,7 +2,7 @@
 
 ### Step1: spit các Component
 
-###h3 Component
+#### Component
     - App.js
     - Control.js
     - Form.js
@@ -13,7 +13,7 @@
     - Title.js
 
 ### Step2: Hiển thị danh sách các Item
-2. Mock
+#### Mock
     - Tasks.js
     
 > #### Implement
