@@ -25,5 +25,47 @@ const elmItem = items.map((item, index) => {
 });
 ```
 2. Tạo file json tên tasks.js
+```
+let items = [
+    {
+        name: "ABC",
+        level: 0 // 0 Small, 1 Medium, 2 High
+    }
+];
+export default items;
+```
 3. Import file json vào App.js
+```
+constructor(props) {
+    super(props);
+
+    this.state = {
+        items: Tasks
+    };
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
