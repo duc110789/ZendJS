@@ -44,6 +44,28 @@ constructor(props) {
     };
 }
 ```
+#### 4. Lấy id random
+search reactjs generate uuid
+```
+const uuidv4 = require('uuid/v4');
+uuidv4(); // ⇨ '10ba038e-48da-487b-96e8-8d3b99b6d18a'
+```
+#### 5. Show level
+
+##### List.js
+```
+let elmItems = items.map((item, index) => {
+    return (
+        <Item key={index} item={item} index={index}/>
+    );
+})
+```
+##### Item.js
+```
+render() {
+        const item = this.props.item;
+        const index = this.props.index; // them index
+```
 
 
 
