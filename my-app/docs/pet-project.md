@@ -66,6 +66,20 @@ render() {
         const item = this.props.item;
         const index = this.props.index; // them index
 ```
+Create a function name: showElementLevel()
+```
+showElementLevel(level) {
+    let elmLevel = <span className="label label-info">Small</span>;
+    if (level === 1) {
+        elmLevel = <span className="label label-primary">Medium</span>;
+    }
+    else if (level === 2) {
+        elmLevel = <span className="label label-danger">High</span>;
+    }
+    return elmLevel;
+}
+```
+invoke <td className="text-center">{this.showElementLevel(item.level)}</td>
 
 
 
