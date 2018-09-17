@@ -81,6 +81,26 @@ showElementLevel(level) {
 ```
 invoke <td className="text-center">{this.showElementLevel(item.level)}</td>
 
+#### 6. Add task
+##### Control.js
+1. Đầu tiên render() ra 1 thằng elmButton với onclick = {this.handleAdd}
+```
+let elmButton = <button onClick = {this.handleAdd} type="button" className="btn btn-info btn-block">Add Task</button>;
+```
+Sau đó return về {elmButton}
+2. Xử lý handleAdd() console.log xem có log đến nó ko
+##### App.js
+1. Trong khi trả về <Control> sẽ truyền vào Control 1 onClickAdd = {this.handleToggleForm}
+2. Xử lý hàm handleToggleForm()
+```
+handleToggleForm = () => {
+    this.setState({
+        isShowForm: !this.state.isShowForm
+    });
+}
+```
+3. Trong Control.js gọi đến onClickAdd() trong hàm handleAdd()
+
 
 
 
