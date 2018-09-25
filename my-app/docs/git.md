@@ -3,6 +3,8 @@
 
 #### Checkout branch
 > git checkout .
+
 > git pull develop origin
+
 > npm run watch
 
